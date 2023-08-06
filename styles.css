@@ -1,0 +1,146 @@
+/* ## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%) */
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Inter:wght@400;700&family=Karla:wght@700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@500&display=swap');
+
+body{
+font-family: 'Karla', sans-serif;
+background-color: var(--LightGray);
+}
+
+
+
+
+
+.section1{
+    padding: 40px;
+    background-color: white;
+
+}
+
+.section2{
+    padding: 40px;
+    background-color: var(--Cyan);
+
+}
+
+.section3{
+    padding: 40px;
+    background-color: var(--Cyan);
+    opacity: 0.7;
+
+}
+
+ol{
+    list-style: none;
+    padding-left: 0;
+    opacity: 0.6;
+    
+    font-size: 0.8rem;
+}
+
+.sec1heading{
+    font-size: 1.5rem;
+    color: var(--Cyan);
+    font-weight: 700;
+}
+
+.sec1subheading{
+    margin-top: 15px;
+    color: var(--BrightYellow);
+    font-weight: 500;
+}
+
+.sec1content{
+    margin-top: 15px;
+    color: var(--GrayishBlue);
+}
+
+.sec2heading{
+    
+    font-size: 1.2rem;
+}
+
+.sec2subheading{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+.sec2subheading span{
+    font-size: 1.5rem;
+}
+
+.sec2content{
+    opacity: 0.7;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+
+}
+
+button{
+    margin-top: 15px;
+    width: 60%;
+    padding: 10px;
+    background-color: var(--BrightYellow);
+    border-radius: 5px;
+    border: 1px solid var(--Cyan);
+    color: white;
+    box-shadow: 2px 2px 5px rgba(53, 64, 53, 0.411);
+}
+
+
+@media(max-width:375px){
+
+    .mainContainer{
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    .flexContainer{
+        display: flex;
+        color: white;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media(min-width:375px){
+
+    .mainContainer{
+    
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 60%;
+        margin:50px auto;
+    }
+    
+    .flexContainer{
+        display: flex;
+        color: white;
+    }
+
+    .section2,.section3{
+        width: 100%;
+    }
+
+}
